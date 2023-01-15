@@ -1,6 +1,6 @@
 # This is the build script for the QScintilla Python bindings.
 #
-# Copyright (c) 2022 Riverbank Computing Limited <info@riverbankcomputing.com>
+# Copyright (c) 2023 Riverbank Computing Limited <info@riverbankcomputing.com>
 # 
 # This file is part of QScintilla.
 # 
