@@ -18,7 +18,7 @@
 # WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 
-!win32:VERSION = 15.1.1
+!win32:VERSION = 15.2.0
 
 TEMPLATE = lib
 CONFIG += qt warn_off thread exceptions hide_symbols
@@ -103,6 +103,7 @@ HEADERS = \
     ./Qsci/qscicommandset.h \
     ./Qsci/qscidocument.h \
     ./Qsci/qscilexer.h \
+    ./Qsci/qscilexerasm.h \
     ./Qsci/qscilexeravs.h \
     ./Qsci/qscilexerbash.h \
     ./Qsci/qscilexerbatch.h \
@@ -117,15 +118,19 @@ HEADERS = \
     ./Qsci/qscilexeredifact.h \
     ./Qsci/qscilexerfortran.h \
     ./Qsci/qscilexerfortran77.h \
+    ./Qsci/qscilexerhex.h \
     ./Qsci/qscilexerhtml.h \
     ./Qsci/qscilexeridl.h \
+    ./Qsci/qscilexerintelhex.h \
     ./Qsci/qscilexerjava.h \
     ./Qsci/qscilexerjavascript.h \
     ./Qsci/qscilexerjson.h \
     ./Qsci/qscilexerlua.h \
     ./Qsci/qscilexermakefile.h \
     ./Qsci/qscilexermarkdown.h \
+    ./Qsci/qscilexermasm.h \
     ./Qsci/qscilexermatlab.h \
+    ./Qsci/qscilexernasm.h \
     ./Qsci/qscilexeroctave.h \
     ./Qsci/qscilexerpascal.h \
     ./Qsci/qscilexerperl.h \
@@ -137,7 +142,9 @@ HEADERS = \
     ./Qsci/qscilexerruby.h \
     ./Qsci/qscilexerspice.h \
     ./Qsci/qscilexersql.h \
+    ./Qsci/qscilexersrec.h \
     ./Qsci/qscilexertcl.h \
+    ./Qsci/qscilexertekhex.h \
     ./Qsci/qscilexertex.h \
     ./Qsci/qscilexerverilog.h \
     ./Qsci/qscilexervhdl.h \
@@ -222,6 +229,7 @@ SOURCES = \
     qscicommandset.cpp \
     qscidocument.cpp \
     qscilexer.cpp \
+    qscilexerasm.cpp \
     qscilexeravs.cpp \
     qscilexerbash.cpp \
     qscilexerbatch.cpp \
@@ -236,15 +244,19 @@ SOURCES = \
     qscilexeredifact.cpp \
     qscilexerfortran.cpp \
     qscilexerfortran77.cpp \
+    qscilexerhex.cpp \
     qscilexerhtml.cpp \
     qscilexeridl.cpp \
+    qscilexerintelhex.cpp \
     qscilexerjava.cpp \
     qscilexerjavascript.cpp \
     qscilexerjson.cpp \
     qscilexerlua.cpp \
     qscilexermakefile.cpp \
     qscilexermarkdown.cpp \
+    qscilexermasm.cpp \
     qscilexermatlab.cpp \
+    qscilexernasm.cpp \
     qscilexeroctave.cpp \
     qscilexerpascal.cpp \
     qscilexerperl.cpp \
@@ -256,7 +268,9 @@ SOURCES = \
     qscilexerruby.cpp \
     qscilexerspice.cpp \
     qscilexersql.cpp \
+    qscilexersrec.cpp \
     qscilexertcl.cpp \
+    qscilexertekhex.cpp \
     qscilexertex.cpp \
     qscilexerverilog.cpp \
     qscilexervhdl.cpp \

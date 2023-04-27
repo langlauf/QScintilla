@@ -2242,7 +2242,7 @@ private:
 
     QString wordAtPosition(int position) const;
 
-    ScintillaBytes styleText(const QList<QsciStyledText> &styled_text,
+    QByteArray styleText(const QList<QsciStyledText> &styled_text,
             char **styles, int style_offset = 0);
 
     struct FindState

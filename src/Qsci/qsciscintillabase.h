@@ -3845,16 +3845,15 @@ protected:
     //! \internal This helps to work around some Scintilla bugs.
     void setScrollBars();
 
-    //! \internal Qt4, Qt5 portability.
-    typedef QByteArray ScintillaBytes;
-
-#define ScintillaBytesConstData(b)  (b).constData()
-
     //! \internal Convert a QString to encoded bytes.
-    ScintillaBytes textAsBytes(const QString &text) const;
+    QByteArray textAsBytes(const QString &text) const;
 
     //! \internal Convert encoded bytes to a QString.
-    QString bytesAsText(const char *bytes) const;
+    QString bytesAsText(const char *bytes, int size) const;
+
+    //! Give access to the text convertors.
+    friend class QsciAccessibleScintillaBase;
+    friend class QsciLexer;
 
     //! \internal A helper for QsciScintilla::contextMenuEvent().
     bool contextMenuNeeded(int x, int y) const;

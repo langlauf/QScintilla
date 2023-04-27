@@ -19,7 +19,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">QScintilla
-   &#160;<span id="projectnumber">2.13.4</span>
+   &#160;<span id="projectnumber">2.14.0</span>
    </div>
   </td>
  </tr>
@@ -44,7 +44,6 @@ $(function() {
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classQsciScintillaBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -1912,12 +1911,6 @@ Static Public Member Functions</h2></td></tr>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>commandKey</b> (int qt_key, int &amp;modifiers)</td></tr>
 <tr class="separator:ad70482ce059c5cb74a014b5eb4f597d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:adf9244775a9df945d915aaf4cf4861fe"><td class="memItemLeft" align="right" valign="top"><a id="adf9244775a9df945d915aaf4cf4861fe"></a>
-typedef QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>ScintillaBytes</b></td></tr>
-<tr class="separator:adf9244775a9df945d915aaf4cf4861fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:abce274ef71035c67baadaa167a1fe5a7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQsciScintillaBase.html#abce274ef71035c67baadaa167a1fe5a7">canInsertFromMimeData</a> (const QMimeData *source) const</td></tr>
@@ -1986,12 +1979,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollContent
 <tr class="memitem:a1628992bb476d4b0939a0349a30930f4"><td class="memItemLeft" align="right" valign="top"><a id="a1628992bb476d4b0939a0349a30930f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setScrollBars</b> ()</td></tr>
 <tr class="separator:a1628992bb476d4b0939a0349a30930f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d0e6cb1806d270a5fa4408cefc5964"><td class="memItemLeft" align="right" valign="top"><a id="a79d0e6cb1806d270a5fa4408cefc5964"></a>
-ScintillaBytes&#160;</td><td class="memItemRight" valign="bottom"><b>textAsBytes</b> (const QString &amp;text) const</td></tr>
-<tr class="separator:a79d0e6cb1806d270a5fa4408cefc5964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fd45107cc2fedc25ad0e52f786f76e6"><td class="memItemLeft" align="right" valign="top"><a id="a5fd45107cc2fedc25ad0e52f786f76e6"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>bytesAsText</b> (const char *bytes) const</td></tr>
-<tr class="separator:a5fd45107cc2fedc25ad0e52f786f76e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7bb81cd95463b8e93396ab5c35d639"><td class="memItemLeft" align="right" valign="top"><a id="afe7bb81cd95463b8e93396ab5c35d639"></a>
+QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>textAsBytes</b> (const QString &amp;text) const</td></tr>
+<tr class="separator:afe7bb81cd95463b8e93396ab5c35d639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e82b5e3dccc56c382fb4c8ced25e849"><td class="memItemLeft" align="right" valign="top"><a id="a1e82b5e3dccc56c382fb4c8ced25e849"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>bytesAsText</b> (const char *bytes, int size) const</td></tr>
+<tr class="separator:a1e82b5e3dccc56c382fb4c8ced25e849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a408cf3a7df3dce50504b83b51ed44b83"><td class="memItemLeft" align="right" valign="top"><a id="a408cf3a7df3dce50504b83b51ed44b83"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuNeeded</b> (int x, int y) const</td></tr>
 <tr class="separator:a408cf3a7df3dce50504b83b51ed44b83"><td class="memSeparator" colspan="2">&#160;</td></tr>

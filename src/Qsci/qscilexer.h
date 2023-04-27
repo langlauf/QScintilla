@@ -318,6 +318,12 @@ protected:
     //!
     virtual bool writeProperties(QSettings &qs,const QString &prefix) const;
 
+    //! \internal Convert a QString to encoded bytes.
+    QByteArray textAsBytes(const QString &text) const;
+
+    //! \internal Convert encoded bytes to a QString.
+    QString bytesAsText(const char *bytes, int size) const;
+
 private:
     struct StyleData {
         QFont font;

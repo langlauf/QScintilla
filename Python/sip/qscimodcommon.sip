@@ -60,6 +60,7 @@ const char *QSCINTILLA_VERSION_STR;
 %Include qscicommandset.sip
 %Include qscidocument.sip
 %Include qscilexer.sip
+%Include qscilexerasm.sip
 %Include qscilexeravs.sip
 %Include qscilexerbash.sip
 %Include qscilexerbatch.sip
@@ -73,15 +74,19 @@ const char *QSCINTILLA_VERSION_STR;
 %Include qscilexerdiff.sip
 %Include qscilexerfortran.sip
 %Include qscilexerfortran77.sip
+%Include qscilexerhex.sip
 %Include qscilexerhtml.sip
 %Include qscilexeridl.sip
+%Include qscilexerintelhex.sip
 %Include qscilexerjava.sip
 %Include qscilexerjavascript.sip
 %Include qscilexerjson.sip
 %Include qscilexerlua.sip
 %Include qscilexermakefile.sip
 %Include qscilexermarkdown.sip
+%Include qscilexermasm.sip
 %Include qscilexermatlab.sip
+%Include qscilexernasm.sip
 %Include qscilexeroctave.sip
 %Include qscilexerpascal.sip
 %Include qscilexerperl.sip
@@ -93,7 +98,9 @@ const char *QSCINTILLA_VERSION_STR;
 %Include qscilexerruby.sip
 %Include qscilexerspice.sip
 %Include qscilexersql.sip
+%Include qscilexersrec.sip
 %Include qscilexertcl.sip
+%Include qscilexertekhex.sip
 %Include qscilexertex.sip
 %Include qscilexerverilog.sip
 %Include qscilexervhdl.sip

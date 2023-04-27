@@ -102,9 +102,6 @@ private:
             int *end_position);
     static QString textRange(QsciScintillaBase *sb, int start_position,
             int end_position);
-    static QString bytesAsText(QsciScintillaBase *sb, const char *bytes,
-            int length);
-    static QByteArray textAsBytes(QsciScintillaBase *sb, const QString &text);
     static int positionAsOffset(QsciScintillaBase *sb, int position);
     static void positionRangeAsOffsetRange(QsciScintillaBase *sb,
             int start_position, int end_position, int *startOffset,

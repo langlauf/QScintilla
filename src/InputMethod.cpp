@@ -264,15 +264,15 @@ QVariant QsciScintillaBase::inputMethodQuery(Qt::InputMethodQuery query) const
 
             SendScintilla(SCI_GETTEXTRANGE, 0, (sptr_t)&textRange);
 
-            return bytesAsText(buffer.constData());
+            return bytesAsText(buffer.constData(), buffer.size());
         }
 
         case Qt::ImCurrentSelection:
         {
-            QVarLengthArray<char,1024> buffer(SendScintilla(SCI_GETSELTEXT));
+            QVarLengthArray<char,1024> buffer(SendScintilla(SCI_GETSELTEXT) + 1);
             SendScintilla(SCI_GETSELTEXT, 0, (sptr_t)buffer.data());
 
-            return bytesAsText(buffer.constData());
+            return bytesAsText(buffer.constData(), buffer.size() - 1);
         }
 
         default:
